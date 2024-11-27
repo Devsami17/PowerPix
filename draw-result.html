@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Power Pix </title>
+
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/arafat-font.css">
+    <link rel="stylesheet" href="assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div class="preloader align-items-center justify-content-center">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+        </div>
+    </div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section">
+      <div class="overlay">
+          <div class="container">
+              <div class="row d-flex header-area">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                      <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
+                         
+                          <img height="250px" width="250px" src="assets/images/main-logo.png" class="logo" alt="logo">
+                      </a>
+                      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#navbar-content">
+                          <i class="fas fa-bars"></i>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                  <a class="nav-link " href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="about.html">About Us</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="lotteries.html">Lotteries</a>
+                              </li>
+                              <li class="nav-item dropdown main-navbar">
+                                  <a class="nav-link dropdown-toggle active" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Results</a>
+                                  <ul class="dropdown-menu main-menu shadow show">
+                                      <li><a class="nav-link" href="previous-results.html">Previous Results</a></li>
+                                      
+                                      <li><a class="nav-link" href="check-your-numbers.html">Check Your Numbers</a></li>
+                                      <li><a class="nav-link" href="winning-stories.html">Winning Stories</a></li>
+                               
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropdown main-navbar">
+                                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Pages</a>
+                                  <ul class="dropdown-menu main-menu shadow show">
+                                      <li><a class="nav-link" href="faq.html">Faq</a></li>
+                                      
+                                      <li><a class="nav-link" href="signup.html">Sign Up</a></li>
+                                      <li><a class="nav-link" href="signin.html">Sign In</a></li>
+                               
+                                  </ul>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="contact.html">Contact</a>
+                              </li>
+                          </ul>
+                          <div class="right-area d-flex gap-3 gap-xl-5 align-items-center">
+                              <!-- <div class="switch-wrapper d-flex gap-2 align-items-center">
+                                  <i class="icon-g-sun sun"></i>
+                                  <label class="switch">
+                                      <input type="checkbox" id="checkbox" class="checkbox">
+                                      <span class="slider"></span>
+                                  </label>
+                                  <i class="icon-h-moon moon"></i>
+                              </div> -->
+                              <div class="btn-area">
+                                  <a href="previous-results.html" class="cmn-btn">
+                                      Play Lottery
+                                      <i class="icon-a-arrow-double"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+    <!-- header-section end -->
+
+<section class="draw-result container">
+<h2>
+    Draw Results
+</h2>
+<div id="filter" class="row form-group align-items-center mb-3 mb-md-4">
+
+    <div class="col-sm-12 col-md-auto">
+      <label class="mb-1" for="GameCode">
+        <strong>
+          Game Name
+        </strong>
+      </label>
+      <select class="form-select form-select-lg" id="GameCode" name="GameCode"><option value="2by2">2by2</option>
+<option value="pb-double-play">Double Play</option>
+<option value="lotto-america">Lotto America</option>
+<option selected="selected" value="powerball">Powerball</option>
+</select>
+    </div>
+
+    <div class="col-sm-12 col-md-auto">
+      <label class="mb-1" for="DrawDate">
+        <strong>
+          Draw Date
+        </strong>
+      </label>
+      <input type="date" id="draw-date" class="form-control form-select-lg">
+    </div>
+
+  </div>
+  <div id="drawResult">
+    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2 g-4 mb-5">
+      <div class="col complete" id="numbers">
+        
+
+<div class="card h-100 number-card number-powerball complete">
+
+<div class="card-body px-5">
+  <svg class="spinner d-none" viewBox="0 0 50 50">
+    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+  </svg>
+
+    <a class="card-prev" href="draw-result.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z">
+        </path>
+      </svg>
+    </a>
+    <a class="card-next" href="draw-result.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
+          </path>
+        </svg>
+      </a>
+
+  <h4 class="card-title mx-auto mb-3 lh-1 text-center title-main py-2 px-3 rounded-3">
+    Winning Numbers
+  </h4>
+  <h5 class="card-title mx-auto mb-3 lh-1 text-center  title-date">Sat, Nov 23, 2024</h5>
+
+  <div class="row col-auto gap-3 mx-0 mb-3 align-items-center game-ball-group g-0 flex-column">
+
+    <div class="d-flex col-auto flex-nowrap game-ball-group mx-auto">
+
+<div class="form-control col white-balls item-powerball">12</div>
+
+<div class="form-control col white-balls item-powerball">13</div>
+
+<div class="form-control col white-balls item-powerball">34</div>
+
+<div class="form-control col white-balls item-powerball">44</div>
+
+<div class="form-control col white-balls item-powerball">67</div>
+
+<div class="form-control col powerball item-powerball">8</div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-6 mx-auto">
+
+<span class="power-play item-power-play | form-control badge rounded-pill col mx-auto text-center">
+  Power Play
+  <span class="multiplier">5x</span>
+</span>
+    </div>
+
+  </div>
+
+    <div class="row mb-3">
+        <div class="col-12 gap-3 my-2 align-items-center text-center  estimated-jackpot">
+          <span class="prize-label">
+            Estimated Jackpot:
+          </span>
+          <span>$172 Million</span>
+        </div>
+        <div class="col-12 gap-3 mt-0 align-items-center text-center  cash-value">
+          <span class="prize-label">
+            Cash Value:
+          </span>
+          <span>$79.5 Million</span>
+        </div>
+
+    </div>
+
+</div>
+</div>
+      </div>
+      <div class="col complete" id="winners">
+        
+<div class="card h-100 winner-card winner-powerball complete">
+<div class="card-body px-5">
+
+  <svg class="spinner d-none" viewBox="0 0 50 50">
+    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+  </svg>
+
+  <h4 class="card-title mx-auto mb-3 lh-1 text-center title-main py-2 px-3 rounded-3">
+    Winners
+  </h4>
+  
+    <h5 class="card-title mx-auto mb-3 lh-1 text-center  title-date">Sat, Nov 23, 2024</h5>
+  <div class="row winners-group mb-3">
+    <span class="game-name lh-1 text-center ">
+      Powerball
+    </span>
+    <span class="winner-type lh-1 text-center ">
+      JACKPOT WINNERS
+    </span>
+    <span class="winner-location text-center  text-red">
+        None
+    </span>
+  </div>
+
+    <div class="row winners-group mb-3">
+      <span class="game-name lh-1 text-center ">
+        Match 5 + Power Play
+      </span>
+      <span class="winner-type lh-1 text-center ">
+        $2 Million Winners
+      </span>
+      <span class="winner-location text-center  text-red">
+          None
+      </span>
+    </div>
+
+    <div class="row winners-group">
+      <span class="game-name lh-1 text-center ">
+        Match 5
+      </span>
+      <span class="winner-type lh-1 text-center ">
+        $1 Million Winners
+      </span>
+      <span class="winner-location text-center  text-red">
+FL        </span>
+    </div>
+</div>
+</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="card mb-5">
+          <div class="card-body">
+            <h4 class="card-title w-100 ">
+              <select class="form-select form-select-lg mb-3" id="OrganizationCode" name="OrganizationCode"><option value="" selected>All</option>
+<option value="az">Arizona</option>
+<option value="ar">Arkansas</option>
+<option value="ca">California</option>
+<option value="co">Colorado</option>
+<option value="ct">Connecticut</option>
+<option value="dc">District of Columbia</option>
+<option value="de">Delaware</option>
+<option value="fl">Florida</option>
+<option value="ga">Georgia</option>
+<option  value="in">Indiana</option>
+<option value="id">Idaho</option>
+<option value="il">Illinois</option>
+<option value="ia">Iowa</option>
+<option value="ks">Kansas</option>
+<option value="ky">Kentucky</option>
+<option value="la">Louisiana</option>
+<option value="me">Maine</option>
+<option value="md">Maryland</option>
+<option value="ma">Massachusetts</option>
+<option value="mi">Michigan</option>
+<option value="mn">Minnesota</option>
+<option value="ms">Mississippi</option>
+<option value="mo">Missouri</option>
+<option value="mt">Montana</option>
+<option value="ne">Nebraska</option>
+<option value="nh">New Hampshire</option>
+<option value="nj">New Jersey</option>
+<option value="nm">New Mexico</option>
+<option value="ny">New York</option>
+<option value="nc">North Carolina</option>
+<option value="nd">North Dakota</option>
+<option value="oh">Ohio</option>
+<option value="ok">Oklahoma</option>
+<option value="or">Oregon</option>
+<option value="pa">Pennsylvania</option>
+<option value="pr">Puerto Rico</option>
+<option value="ri">Rhode Island</option>
+<option value="sc">South Carolina</option>
+<option value="sd">South Dakota</option>
+<option value="tn">Tennessee</option>
+<option value="tx">Texas</option>
+<option value="vt">Vermont</option>
+<option value="vi">Virgin Islands</option>
+<option value="va">Virginia</option>
+<option value="wa">Washington</option>
+<option value="wv">West Virginia</option>
+<option value="wi">Wisconsin</option>
+<option value="wy">Wyoming</option>
+</select>
+            </h4>
+            <table class="winners-table | table">
+              <thead>
+              <tr class="bg-red text-light">
+                <th scope="col" class="match-col">
+                  Match
+                </th>
+                <th scope="col" class="text-center">
+                  Powerball Winners
+                </th>
+                  <th scope="col" class="text-center">
+                    Powerball Prize
+                  </th>
+                    <th scope="col" class="text-center">
+                      Power Play Winners
+                    </th>
+                    <th scope="col" class="text-center">
+                      Power Play Prize
+                    </th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Match">
+                    <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                      <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-plus"></span>
+                        <span class="item-ball item-bonus"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-right text-md-center" data-label="Powerball Winners">
+                    0
+                  </td>
+                    <td class="text-right text-md-center" data-label="Powerball Prize">
+                          Grand Prize
+                    </td>
+                      <td class="text-right text-md-center" data-label="Power Play Winners">
+                        
+                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Prize">
+                      </td>
+                </tr>
+                <tr>
+                  <td data-label="Match">
+                    <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                      <div class="game-balls float-sm-end w-auto px-0 item-powerball m5">
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-plus"></span>
+                        <span class="item-ball item-bonus"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-right text-md-center" data-label="Powerball Winners">
+                    0
+                  </td>
+                    <td class="text-right text-md-center" data-label="Powerball Prize">
+$1,000,000                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Winners">
+                        0
+                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Prize">
+$2,000,000                        </td>
+                </tr>
+                <tr>
+                  <td data-label="Match">
+                    <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                      <div class="game-balls float-sm-end w-auto px-0 item-powerball m4-pb">
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-plus"></span>
+                        <span class="item-ball item-bonus"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-right text-md-center" data-label="Powerball Winners">
+                    0
+                  </td>
+                    <td class="text-right text-md-center" data-label="Powerball Prize">
+$50,000                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Winners">
+                        0
+                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Prize">
+$150,000                        </td>
+                </tr>
+                <tr>
+                  <td data-label="Match">
+                    <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                      <div class="game-balls float-sm-end w-auto px-0 item-powerball m4">
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-plus"></span>
+                        <span class="item-ball item-bonus"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-right text-md-center" data-label="Powerball Winners">
+                    6
+                  </td>
+                    <td class="text-right text-md-center" data-label="Powerball Prize">
+$100                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Winners">
+                        1
+                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Prize">
+$300                        </td>
+                </tr>
+                <tr>
+                  <td data-label="Match">
+                    <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                      <div class="game-balls float-sm-end w-auto px-0 item-powerball m3-pb">
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-plus"></span>
+                        <span class="item-ball item-bonus"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-right text-md-center" data-label="Powerball Winners">
+                    11
+                  </td>
+                    <td class="text-right text-md-center" data-label="Powerball Prize">
+$100                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Winners">
+                        6
+                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Prize">
+$300                        </td>
+                </tr>
+                <tr>
+                  <td data-label="Match">
+                    <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                      <div class="game-balls float-sm-end w-auto px-0 item-powerball m3">
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-plus"></span>
+                        <span class="item-ball item-bonus"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-right text-md-center" data-label="Powerball Winners">
+                    288
+                  </td>
+                    <td class="text-right text-md-center" data-label="Powerball Prize">
+$7                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Winners">
+                        99
+                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Prize">
+$21                        </td>
+                </tr>
+                <tr>
+                  <td data-label="Match">
+                    <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                      <div class="game-balls float-sm-end w-auto px-0 item-powerball m2-pb">
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-plus"></span>
+                        <span class="item-ball item-bonus"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-right text-md-center" data-label="Powerball Winners">
+                    238
+                  </td>
+                    <td class="text-right text-md-center" data-label="Powerball Prize">
+$7                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Winners">
+                        83
+                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Prize">
+$21                        </td>
+                </tr>
+                <tr>
+                  <td data-label="Match">
+                    <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                      <div class="game-balls float-sm-end w-auto px-0 item-powerball m1-pb">
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-plus"></span>
+                        <span class="item-ball item-bonus"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-right text-md-center" data-label="Powerball Winners">
+                    1,903
+                  </td>
+                    <td class="text-right text-md-center" data-label="Powerball Prize">
+$4                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Winners">
+                        684
+                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Prize">
+$12                        </td>
+                </tr>
+                <tr>
+                  <td data-label="Match">
+                    <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                      <div class="game-balls float-sm-end w-auto px-0 item-powerball m0-pb">
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-ball"></span>
+                        <span class="item-plus"></span>
+                        <span class="item-ball item-bonus"></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-right text-md-center" data-label="Powerball Winners">
+                    4,554
+                  </td>
+                    <td class="text-right text-md-center" data-label="Powerball Prize">
+$4                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Winners">
+                        1,551
+                      </td>
+                      <td class="text-right text-md-center" data-label="Power Play Prize">
+$12                        </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section section-bg">
+      <div class="footer-area">
+          <div class="container">
+              <div class="row wrapper mt-80 mb-80">
+                  <div class="col-xl-12 cus-mar d-flex flex-wrap align-items-center justify-content-between top-area">
+                      <div class="single-box">
+                          <a href="index.html">
+                              <img height="250px" width="250px" src="assets/images/main-logo.png" class="logo" alt="logo">
+                          </a>
+                      </div>
+                      <div class="single-box">
+                          <ul class="items gap-3 d-flex flex-wrap align-items-center">
+                              <li><a href="about.html">About us</a></li>
+                              <li><a href="lotteries.html">Lotteries</a></li>
+                              <li><a href="previous-results.html">Results</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                          </ul>
+                      </div>
+                      <div class="single-box social">
+                          <ul class="d-flex">
+                              <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="javascript:void(0)"><i class="fab fa-dribbble"></i></a></li>
+                              <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                              <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="copyright text-center">
+                          <p>ThePowerPix.com is not affiliated with the Multi-State Lottery Association or any State lottery. The content and operations of this website have not been approved or endorsed by MUSL or any other state lottery organisation.</p>
+                          <p>Copyright © 2024. All Right Reserved By <a href="javascript:void(0)">Power Pix</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugin/counter.js"></script>
+    <script src="assets/js/plugin/waypoint.min.js"></script>
+    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugin/wow.min.js"></script>
+    <script src="assets/js/plugin/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

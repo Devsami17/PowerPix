@@ -1,0 +1,1610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Power Pix </title>
+
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/arafat-font.css">
+    <link rel="stylesheet" href="assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div class="preloader align-items-center justify-content-center">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+        </div>
+    </div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section">
+      <div class="overlay">
+          <div class="container">
+              <div class="row d-flex header-area">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                      <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
+                         
+                          <img height="250px" width="250px" src="assets/images/main-logo.png" class="logo" alt="logo">
+                      </a>
+                      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#navbar-content">
+                          <i class="fas fa-bars"></i>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                  <a class="nav-link " href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="about.html">About Us</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="lotteries.html">Lotteries</a>
+                              </li>
+                              <li class="nav-item dropdown main-navbar">
+                                  <a class="nav-link active dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Results</a>
+                                  <ul class="dropdown-menu main-menu shadow show">
+                                      <li><a class="nav-link" href="previous-results.html">Previous Results</a></li>
+                                      
+                                      <li><a class="nav-link" href="check-your-numbers.html">Check Your Numbers</a></li>
+                                      <li><a class="nav-link" href="winning-stories.html">Winning Stories</a></li>
+                               
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropdown main-navbar">
+                                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Pages</a>
+                                  <ul class="dropdown-menu main-menu shadow show">
+                                      <li><a class="nav-link" href="faq.html">Faq</a></li>
+                                      
+                                      <li><a class="nav-link" href="signup.html">Sign Up</a></li>
+                                      <li><a class="nav-link" href="signin.html">Sign In</a></li>
+                               
+                                  </ul>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="contact.html">Contact</a>
+                              </li>
+                          </ul>
+                          <div class="right-area d-flex gap-3 gap-xl-5 align-items-center">
+                              <!-- <div class="switch-wrapper d-flex gap-2 align-items-center">
+                                  <i class="icon-g-sun sun"></i>
+                                  <label class="switch">
+                                      <input type="checkbox" id="checkbox" class="checkbox">
+                                      <span class="slider"></span>
+                                  </label>
+                                  <i class="icon-h-moon moon"></i>
+                              </div> -->
+                              <div class="btn-area">
+                                  <a href="previous-results.html" class="cmn-btn">
+                                      Play Lottery
+                                      <i class="icon-a-arrow-double"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+    <!-- header-section end -->
+
+<section class="previous-result container">
+    <h2>Previous Results</h2>
+    <p>Are you holding a winning ticket?</p>
+    <div id="filter" class=" row form-group align-items-center mb-3 mb-md-4">
+
+        <div class="col-sm-12 col-md-auto">
+          <label class="mb-2" for="GameCode">
+            <strong>
+              Game Name
+            </strong>
+          </label>
+          <select class="form-select form-select-lg" id="GameCode" name="GameCode"><option value="2by2">2by2</option>
+    <option value="pb-double-play">Double Play</option>
+    <option value="lotto-america">Lotto America</option>
+    <option selected="selected" value="powerball">Powerball</option>
+    </select>
+        </div>
+    
+        <div class="col-sm-12 col-md-auto">
+            <label class="mb-2" for="StartDate">
+              <strong>Start Date</strong>
+            </label>
+            <input type="date" id="StartDate" class="form-control form-select-lg">
+          </div>
+          
+          <div class="col-sm-12 col-md-auto">
+            <label class="mb-2" for="EndDate">
+              <strong>End Date</strong>
+            </label>
+            <input type="date" id="EndDate" class="form-control form-select-lg">
+          </div>
+    
+        <div class="col-sm-12 col-md-auto align-self-end">
+          <button id="searchNumbers" class="btn btn-primary btn-lg">
+            Search
+          </button>
+          <button id="clearNumbers" class="btn btn-secondary btn-lg">
+            Clear
+          </button>
+        </div>
+    
+      </div>
+      <div id="searchNumbersResults">
+        <div class="d-flex gap-3 flex-column">
+            <a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sun, Nov 24, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">5</div>
+      
+        <div class="form-control col red-balls item-2by2">15</div>
+      
+        <div class="form-control col white-balls item-2by2">1</div>
+      
+        <div class="form-control col white-balls item-2by2">23</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sat, Nov 23, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">3</div>
+      
+        <div class="form-control col red-balls item-2by2">14</div>
+      
+        <div class="form-control col white-balls item-2by2">2</div>
+      
+        <div class="form-control col white-balls item-2by2">13</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Fri, Nov 22, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">16</div>
+      
+        <div class="form-control col red-balls item-2by2">17</div>
+      
+        <div class="form-control col white-balls item-2by2">23</div>
+      
+        <div class="form-control col white-balls item-2by2">26</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Thu, Nov 21, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">11</div>
+      
+        <div class="form-control col red-balls item-2by2">12</div>
+      
+        <div class="form-control col white-balls item-2by2">17</div>
+      
+        <div class="form-control col white-balls item-2by2">20</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Wed, Nov 20, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">3</div>
+      
+        <div class="form-control col red-balls item-2by2">15</div>
+      
+        <div class="form-control col white-balls item-2by2">15</div>
+      
+        <div class="form-control col white-balls item-2by2">21</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Tue, Nov 19, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">1</div>
+      
+        <div class="form-control col red-balls item-2by2">22</div>
+      
+        <div class="form-control col white-balls item-2by2">11</div>
+      
+        <div class="form-control col white-balls item-2by2">17</div>
+                </div>
+                  <div class="col align-self-center w-100">
+      
+        <span class="doubler item-doubler | form-control badge rounded-pill col mx-auto text-center">
+          Doubler
+          <span class="multiplier">5x</span>
+        </span>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Mon, Nov 18, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">5</div>
+      
+        <div class="form-control col red-balls item-2by2">7</div>
+      
+        <div class="form-control col white-balls item-2by2">15</div>
+      
+        <div class="form-control col white-balls item-2by2">23</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sun, Nov 17, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">10</div>
+      
+        <div class="form-control col red-balls item-2by2">26</div>
+      
+        <div class="form-control col white-balls item-2by2">3</div>
+      
+        <div class="form-control col white-balls item-2by2">16</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sat, Nov 16, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">7</div>
+      
+        <div class="form-control col red-balls item-2by2">10</div>
+      
+        <div class="form-control col white-balls item-2by2">3</div>
+      
+        <div class="form-control col white-balls item-2by2">18</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Fri, Nov 15, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">19</div>
+      
+        <div class="form-control col red-balls item-2by2">20</div>
+      
+        <div class="form-control col white-balls item-2by2">8</div>
+      
+        <div class="form-control col white-balls item-2by2">20</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Thu, Nov 14, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">8</div>
+      
+        <div class="form-control col red-balls item-2by2">9</div>
+      
+        <div class="form-control col white-balls item-2by2">9</div>
+      
+        <div class="form-control col white-balls item-2by2">13</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Wed, Nov 13, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">7</div>
+      
+        <div class="form-control col red-balls item-2by2">12</div>
+      
+        <div class="form-control col white-balls item-2by2">13</div>
+      
+        <div class="form-control col white-balls item-2by2">26</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Tue, Nov 12, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">12</div>
+      
+        <div class="form-control col red-balls item-2by2">16</div>
+      
+        <div class="form-control col white-balls item-2by2">20</div>
+      
+        <div class="form-control col white-balls item-2by2">24</div>
+                </div>
+                  <div class="col align-self-center w-100">
+      
+        <span class="doubler item-doubler | form-control badge rounded-pill col mx-auto text-center">
+          Doubler
+          <span class="multiplier">5x</span>
+        </span>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Mon, Nov 11, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">4</div>
+      
+        <div class="form-control col red-balls item-2by2">7</div>
+      
+        <div class="form-control col white-balls item-2by2">17</div>
+      
+        <div class="form-control col white-balls item-2by2">18</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sun, Nov 10, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">16</div>
+      
+        <div class="form-control col red-balls item-2by2">22</div>
+      
+        <div class="form-control col white-balls item-2by2">8</div>
+      
+        <div class="form-control col white-balls item-2by2">24</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sat, Nov 9, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">20</div>
+      
+        <div class="form-control col red-balls item-2by2">23</div>
+      
+        <div class="form-control col white-balls item-2by2">5</div>
+      
+        <div class="form-control col white-balls item-2by2">20</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Fri, Nov 8, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">13</div>
+      
+        <div class="form-control col red-balls item-2by2">19</div>
+      
+        <div class="form-control col white-balls item-2by2">4</div>
+      
+        <div class="form-control col white-balls item-2by2">14</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Thu, Nov 7, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">10</div>
+      
+        <div class="form-control col red-balls item-2by2">13</div>
+      
+        <div class="form-control col white-balls item-2by2">3</div>
+      
+        <div class="form-control col white-balls item-2by2">6</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Wed, Nov 6, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">22</div>
+      
+        <div class="form-control col red-balls item-2by2">25</div>
+      
+        <div class="form-control col white-balls item-2by2">3</div>
+      
+        <div class="form-control col white-balls item-2by2">25</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Tue, Nov 5, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">13</div>
+      
+        <div class="form-control col red-balls item-2by2">16</div>
+      
+        <div class="form-control col white-balls item-2by2">5</div>
+      
+        <div class="form-control col white-balls item-2by2">16</div>
+                </div>
+                  <div class="col align-self-center w-100">
+      
+        <span class="doubler item-doubler | form-control badge rounded-pill col mx-auto text-center">
+          Doubler
+          <span class="multiplier">5x</span>
+        </span>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Mon, Nov 4, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">15</div>
+      
+        <div class="form-control col red-balls item-2by2">22</div>
+      
+        <div class="form-control col white-balls item-2by2">4</div>
+      
+        <div class="form-control col white-balls item-2by2">9</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sun, Nov 3, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">11</div>
+      
+        <div class="form-control col red-balls item-2by2">22</div>
+      
+        <div class="form-control col white-balls item-2by2">17</div>
+      
+        <div class="form-control col white-balls item-2by2">24</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sat, Nov 2, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">3</div>
+      
+        <div class="form-control col red-balls item-2by2">18</div>
+      
+        <div class="form-control col white-balls item-2by2">1</div>
+      
+        <div class="form-control col white-balls item-2by2">5</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Fri, Nov 1, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">1</div>
+      
+        <div class="form-control col red-balls item-2by2">12</div>
+      
+        <div class="form-control col white-balls item-2by2">2</div>
+      
+        <div class="form-control col white-balls item-2by2">13</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Thu, Oct 31, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">2</div>
+      
+        <div class="form-control col red-balls item-2by2">16</div>
+      
+        <div class="form-control col white-balls item-2by2">1</div>
+      
+        <div class="form-control col white-balls item-2by2">10</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Wed, Oct 30, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">3</div>
+      
+        <div class="form-control col red-balls item-2by2">9</div>
+      
+        <div class="form-control col white-balls item-2by2">13</div>
+      
+        <div class="form-control col white-balls item-2by2">26</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Tue, Oct 29, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">9</div>
+      
+        <div class="form-control col red-balls item-2by2">23</div>
+      
+        <div class="form-control col white-balls item-2by2">21</div>
+      
+        <div class="form-control col white-balls item-2by2">22</div>
+                </div>
+                  <div class="col align-self-center w-100">
+      
+        <span class="doubler item-doubler | form-control badge rounded-pill col mx-auto text-center">
+          Doubler
+          <span class="multiplier">5x</span>
+        </span>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Mon, Oct 28, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">3</div>
+      
+        <div class="form-control col red-balls item-2by2">19</div>
+      
+        <div class="form-control col white-balls item-2by2">4</div>
+      
+        <div class="form-control col white-balls item-2by2">16</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sun, Oct 27, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">1</div>
+      
+        <div class="form-control col red-balls item-2by2">2</div>
+      
+        <div class="form-control col white-balls item-2by2">1</div>
+      
+        <div class="form-control col white-balls item-2by2">2</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sat, Oct 26, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">10</div>
+      
+        <div class="form-control col red-balls item-2by2">14</div>
+      
+        <div class="form-control col white-balls item-2by2">21</div>
+      
+        <div class="form-control col white-balls item-2by2">24</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a>
+          
+            <a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Fri, Oct 25, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">12</div>
+      
+        <div class="form-control col red-balls item-2by2">22</div>
+      
+        <div class="form-control col white-balls item-2by2">6</div>
+      
+        <div class="form-control col white-balls item-2by2">17</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Thu, Oct 24, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">9</div>
+      
+        <div class="form-control col red-balls item-2by2">14</div>
+      
+        <div class="form-control col white-balls item-2by2">2</div>
+      
+        <div class="form-control col white-balls item-2by2">14</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Wed, Oct 23, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">6</div>
+      
+        <div class="form-control col red-balls item-2by2">11</div>
+      
+        <div class="form-control col white-balls item-2by2">4</div>
+      
+        <div class="form-control col white-balls item-2by2">22</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Tue, Oct 22, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">4</div>
+      
+        <div class="form-control col red-balls item-2by2">10</div>
+      
+        <div class="form-control col white-balls item-2by2">6</div>
+      
+        <div class="form-control col white-balls item-2by2">21</div>
+                </div>
+                  <div class="col align-self-center w-100">
+      
+        <span class="doubler item-doubler | form-control badge rounded-pill col mx-auto text-center">
+          Doubler
+          <span class="multiplier">5x</span>
+        </span>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Mon, Oct 21, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">12</div>
+      
+        <div class="form-control col red-balls item-2by2">26</div>
+      
+        <div class="form-control col white-balls item-2by2">4</div>
+      
+        <div class="form-control col white-balls item-2by2">10</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sun, Oct 20, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">4</div>
+      
+        <div class="form-control col red-balls item-2by2">15</div>
+      
+        <div class="form-control col white-balls item-2by2">7</div>
+      
+        <div class="form-control col white-balls item-2by2">22</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Sat, Oct 19, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">3</div>
+      
+        <div class="form-control col red-balls item-2by2">5</div>
+      
+        <div class="form-control col white-balls item-2by2">15</div>
+      
+        <div class="form-control col white-balls item-2by2">17</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Fri, Oct 18, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">14</div>
+      
+        <div class="form-control col red-balls item-2by2">19</div>
+      
+        <div class="form-control col white-balls item-2by2">7</div>
+      
+        <div class="form-control col white-balls item-2by2">14</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Thu, Oct 17, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">6</div>
+      
+        <div class="form-control col red-balls item-2by2">12</div>
+      
+        <div class="form-control col white-balls item-2by2">15</div>
+      
+        <div class="form-control col white-balls item-2by2">21</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Wed, Oct 16, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">17</div>
+      
+        <div class="form-control col red-balls item-2by2">19</div>
+      
+        <div class="form-control col white-balls item-2by2">12</div>
+      
+        <div class="form-control col white-balls item-2by2">15</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Tue, Oct 15, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">7</div>
+      
+        <div class="form-control col red-balls item-2by2">13</div>
+      
+        <div class="form-control col white-balls item-2by2">13</div>
+      
+        <div class="form-control col white-balls item-2by2">16</div>
+                </div>
+                  <div class="col align-self-center w-100">
+      
+        <span class="doubler item-doubler | form-control badge rounded-pill col mx-auto text-center">
+          Doubler
+          <span class="multiplier">5x</span>
+        </span>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a><a class="card" href="draw-result.html">
+        <div class="card-body ps-3 pe-4 pe-lg-5">
+          <div class="row justify-content-between gap-2 gap-lg-0 align-items-center">
+            <div class="col-12 col-lg-4">
+              <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+                <h5 class="card-title">Mon, Oct 14, 2024</h5>
+              </div>
+            </div>
+      
+            <div class="col-12 col-lg-4">
+              <div class="row row-cols-2 flex-column gap-3 h-100">
+                <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  ">
+      
+        <div class="form-control col red-balls item-2by2">6</div>
+      
+        <div class="form-control col red-balls item-2by2">24</div>
+      
+        <div class="form-control col white-balls item-2by2">14</div>
+      
+        <div class="form-control col white-balls item-2by2">15</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+      
+            </div>
+      
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </div>
+      </a>
+          </div>
+        <div class="col-sm-12 col-md-auto add justify-content-center d-flex my-4 my-md-5">
+            <button id="loadMore" class="btn btn-primary btn-lg" data-val="2" data-max="2">
+              Load More
+            </button>
+          </div>
+      </div>
+</section>
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section section-bg">
+      <div class="footer-area">
+          <div class="container">
+              <div class="row wrapper mt-80 mb-80">
+                  <div class="col-xl-12 cus-mar d-flex flex-wrap align-items-center justify-content-between top-area">
+                      <div class="single-box">
+                          <a href="index.html">
+                              <img height="250px" width="250px" src="assets/images/main-logo.png" class="logo" alt="logo">
+                          </a>
+                      </div>
+                      <div class="single-box">
+                          <ul class="items gap-3 d-flex flex-wrap align-items-center">
+                              <li><a href="about.html">About us</a></li>
+                              <li><a href="lotteries.html">Lotteries</a></li>
+                              <li><a href="previous-results.html">Results</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                          </ul>
+                      </div>
+                      <div class="single-box social">
+                          <ul class="d-flex">
+                              <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="javascript:void(0)"><i class="fab fa-dribbble"></i></a></li>
+                              <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                              <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="copyright text-center">
+                          <p>ThePowerPix.com is not affiliated with the Multi-State Lottery Association or any State lottery. The content and operations of this website have not been approved or endorsed by MUSL or any other state lottery organisation.</p>
+                          <p>Copyright © 2024. All Right Reserved By <a href="javascript:void(0)">Power Pix</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugin/counter.js"></script>
+    <script src="assets/js/plugin/waypoint.min.js"></script>
+    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugin/wow.min.js"></script>
+    <script src="assets/js/plugin/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

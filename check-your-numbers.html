@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Power Pix </title>
+
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/arafat-font.css">
+    <link rel="stylesheet" href="assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div class="preloader align-items-center justify-content-center">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+        </div>
+    </div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section">
+      <div class="overlay">
+          <div class="container">
+              <div class="row d-flex header-area">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                      <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
+                         
+                          <img height="250px" width="250px" src="assets/images/main-logo.png" class="logo" alt="logo">
+                      </a>
+                      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#navbar-content">
+                          <i class="fas fa-bars"></i>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                  <a class="nav-link " href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="about.html">About Us</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="lotteries.html">Lotteries</a>
+                              </li>
+                              <li class="nav-item dropdown main-navbar">
+                                  <a class="nav-link active dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Results</a>
+                                  <ul class="dropdown-menu main-menu shadow show">
+                                      <li><a class="nav-link" href="previous-results.html">Previous Results</a></li>
+                                      
+                                      <li><a class="nav-link" href="check-your-numbers.html">Check Your Numbers</a></li>
+                                      <li><a class="nav-link" href="winning-stories.html">Winning Stories</a></li>
+                               
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropdown main-navbar">
+                                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Pages</a>
+                                  <ul class="dropdown-menu main-menu shadow show">
+                                      <li><a class="nav-link" href="faq.html">Faq</a></li>
+                                      
+                                      <li><a class="nav-link" href="signup.html">Sign Up</a></li>
+                                      <li><a class="nav-link" href="signin.html">Sign In</a></li>
+                               
+                                  </ul>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="contact.html">Contact</a>
+                              </li>
+                          </ul>
+                          <div class="right-area d-flex gap-3 gap-xl-5 align-items-center">
+                              <!-- <div class="switch-wrapper d-flex gap-2 align-items-center">
+                                  <i class="icon-g-sun sun"></i>
+                                  <label class="switch">
+                                      <input type="checkbox" id="checkbox" class="checkbox">
+                                      <span class="slider"></span>
+                                  </label>
+                                  <i class="icon-h-moon moon"></i>
+                              </div> -->
+                              <div class="btn-area">
+                                  <a href="previous-results.html" class="cmn-btn">
+                                      Play Lottery
+                                      <i class="icon-a-arrow-double"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+    <!-- header-section end -->
+
+<section class="check-your-numbers container">
+<h2>Check Your Numbers</h2>
+<p>Are you holding a winning ticket, or have your favorite numbers won in the past five years? Enter your numbers and a date range to see if those numbers have been drawn. Only number combinations that would have won a prize will be shown.</p>
+<div id="filter" class="row form-group align-items-center mb-4 mb-md-5">
+    <div class="col-sm-12 col-md-auto mb-3 mb-lg-0">
+      <label class="mb-2" for="GameCode">
+        <strong>
+          Game Name
+        </strong>
+      </label>
+      <select class="form-select form-select-lg" id="GameCode" name="GameCode"><option value="2by2">2by2</option>
+<option value="pb-double-play">Double Play</option>
+<option value="lotto-america">Lotto America</option>
+<option selected="selected" value="powerball">Powerball</option>
+</select>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-4 position-relative align-self-end mb-4 mb-lg-0">
+      <div class="row px-3 flex-nowrap">
+        
+  <input type="number" id="number_1_1" class="form-control col white-balls item-powerball" min="1" max="69" autofocus="">
+  <input type="number" id="number_1_2" class="form-control col white-balls item-powerball" min="1" max="69">
+  <input type="number" id="number_1_3" class="form-control col white-balls item-powerball" min="1" max="69">
+  <input type="number" id="number_1_4" class="form-control col white-balls item-powerball" min="1" max="69">
+  <input type="number" id="number_1_5" class="form-control col white-balls item-powerball" min="1" max="69">
+
+  <input type="number" id="number_2_1" class="form-control col powerball item-powerball" min="1" max="26" autofocus="">
+
+      </div>
+      <div class="row mx-2 error-msg position-absolute d-none" id="error-range">
+        Please provide a valid number in each field, 1-69 or 1-26 for the Powerball.
+      </div>
+      <div class="row mx-2 error-msg position-absolute d-none" id="error-unique">
+        Please provide unique numbers in each white field.
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-auto ms-lg-auto mb-3 mb-lg-0">
+      <label class="mb-2" for="Days">
+        <strong>
+          Date Range
+        </strong>
+      </label>
+      <select class="form-select form-select-lg" data-val="true" data-val-required="The Days field is required." id="Days" name="Days"><option selected="selected" value="30">Last 30 Days</option>
+<option value="60">Last 60 Days</option>
+<option value="120">Last 120 Days</option>
+<option value="180">Last 180 Days</option>
+<option value="365">Last Year</option>
+<option value="731">Last 2 Years</option>
+<option value="1826">Last 5 Years</option>
+</select>
+    </div>
+    <div class="col-sm-12 col-md-auto align-self-end mb-4 mb-lg-0">
+      <button id="searchNumbers" onclick="checkYourNumbers(this)" class="btn btn-primary btn-lg">
+        Search
+      </button>
+      <button id="clearNumbers" onclick="clearCheckNumbers()" class="btn btn-secondary btn-lg">
+        Clear
+      </button>
+    </div>
+  </div>
+  <div id="searchNumbersResults">
+    <div class="d-flex gap-3 flex-column">
+      <a class="card check-your-numbers-card" href="draw-result.html">
+  <div class="card-body ps-3 pe-4 pe-lg-5">
+    <div class="row justify-content-between gap-2 gap-lg-0">
+      <div class="col-12 col-lg-4">
+        <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+          <h5 class="card-title">Sat, Oct 12, 2024</h5>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="row row-cols-2 flex-column gap-3 h-100">
+          <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  result-card">
+
+  <div class="form-control col white-balls item-powerball match">5</div>
+
+  <div class="form-control col white-balls item-powerball">14</div>
+
+  <div class="form-control col white-balls item-powerball">20</div>
+
+  <div class="form-control col white-balls item-powerball">41</div>
+
+  <div class="form-control col white-balls item-powerball">57</div>
+
+  <div class="form-control col powerball item-powerball match">6</div>
+          </div>
+            <div class="col align-self-center w-100">
+
+  <span class="power-play item-power-play | form-control badge rounded-pill col mx-auto text-center">
+    Power Play
+    <span class="multiplier">10x</span>
+  </span>
+            </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+
+          <div class="d-flex h-100 gap-2 flex-column align-items-center justify-content-center text-center">
+            <div class="amount-won rounded-pill">
+              Powerball Prize:
+$4            </div>
+
+              <div class="amount-won rounded-pill">
+                Power Play Prize:
+
+$12
+              </div>
+          </div>
+      </div>
+
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+    </svg>
+  </div>
+</a>
+<a class="card check-your-numbers-card" href="draw-result.html">
+    <div class="card-body ps-3 pe-4 pe-lg-5">
+      <div class="row justify-content-between gap-2 gap-lg-0">
+        <div class="col-12 col-lg-4">
+          <div class="d-flex h-100 align-items-center justify-content-center justify-content-lg-start text-center">
+            <h5 class="card-title">Wed, May 15, 2024</h5>
+          </div>
+        </div>
+  
+        <div class="col-12 col-lg-4">
+          <div class="row row-cols-2 flex-column gap-3 h-100">
+            <div class="col d-flex gap-1 gap-lg-2 mx-0 align-items-center w-100 justify-content-center | game-ball-group  result-card">
+  
+    <div class="form-control col white-balls item-powerball">19</div>
+  
+    <div class="form-control col white-balls item-powerball">42</div>
+  
+    <div class="form-control col white-balls item-powerball">45</div>
+  
+    <div class="form-control col white-balls item-powerball">55</div>
+  
+    <div class="form-control col white-balls item-powerball">69</div>
+  
+    <div class="form-control col powerball item-powerball match">6</div>
+            </div>
+              <div class="col align-self-center w-100">
+  
+    <span class="power-play item-power-play | form-control badge rounded-pill col mx-auto text-center">
+      Power Play
+      <span class="multiplier">5x</span>
+    </span>
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+  
+            <div class="d-flex h-100 gap-2 flex-column align-items-center justify-content-center text-center">
+              <div class="amount-won rounded-pill">
+                Powerball Prize:
+  $4            </div>
+  
+                <div class="amount-won rounded-pill">
+                  Power Play Prize:
+  
+  $8
+                </div>
+            </div>
+        </div>
+  
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+      </svg>
+    </div>
+  </a>
+    </div>
+</div>
+</section>
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section section-bg">
+      <div class="footer-area">
+          <div class="container">
+              <div class="row wrapper mt-80 mb-80">
+                  <div class="col-xl-12 cus-mar d-flex flex-wrap align-items-center justify-content-between top-area">
+                      <div class="single-box">
+                          <a href="index.html">
+                              <img height="250px" width="250px" src="assets/images/main-logo.png" class="logo" alt="logo">
+                          </a>
+                      </div>
+                      <div class="single-box">
+                          <ul class="items gap-3 d-flex flex-wrap align-items-center">
+                              <li><a href="about.html">About us</a></li>
+                              <li><a href="lotteries.html">Lotteries</a></li>
+                              <li><a href="previous-results.html">Results</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                          </ul>
+                      </div>
+                      <div class="single-box social">
+                          <ul class="d-flex">
+                              <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="javascript:void(0)"><i class="fab fa-dribbble"></i></a></li>
+                              <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                              <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="copyright text-center">
+                          <p>ThePowerPix.com is not affiliated with the Multi-State Lottery Association or any State lottery. The content and operations of this website have not been approved or endorsed by MUSL or any other state lottery organisation.</p>
+                          <p>Copyright © 2024. All Right Reserved By <a href="javascript:void(0)">Power Pix</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugin/counter.js"></script>
+    <script src="assets/js/plugin/waypoint.min.js"></script>
+    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugin/wow.min.js"></script>
+    <script src="assets/js/plugin/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
