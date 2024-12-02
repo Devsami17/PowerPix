@@ -52,9 +52,7 @@
                               <li class="nav-item">
                                   <a class="nav-link " href="index.html">Home</a>
                               </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="about.html">About Us</a>
-                              </li>
+                           
                               <!-- <li class="nav-item">
                                   <a class="nav-link" href="lotteries.html">Lotteries</a>
                               </li> -->
@@ -106,13 +104,16 @@
 <section class="previous-results">
   <div class=" mt-5" id="drawResult">
     <div class="tabs-area">
-      <button class="active" data-tab="4+pb">4+PB</button>
-      <button data-tab="5+pb">5+PB</button>
+      <button data-tab="all-results" class="active">All Results</button>
       <button data-tab="5-of-5">5 of 5</button>
-      <button data-tab="all-results">All Results</button>
+      <button data-tab="5+pb">5+PB</button>
+      <button data-tab="4+pb">4+PB</button>
+    
+      
+     
     </div>
   
-    <div class="row mt-5 result-tab-content active" id="4+pb">
+    <div class="row mt-5 result-tab-content " id="4+pb">
       <div class="col">
         <h2>$50,000 Prizes (4+PB) predicted since 2017
         </h2>
@@ -124,10 +125,10 @@
                 Game Name
               </strong>
             </label>
-            <select class="form-select form-select-lg" id="GameCode" name="GameCode">
+            <input class="form-control form-control-lg" value="PowerBall" readonly id="GameCode" name="GameCode">
      
-      <option selected="selected" value="powerball">Powerball</option>
-      </select>
+      
+      
           </div>
       
           <div class="col-sm-12 col-md-auto">
@@ -205,28 +206,28 @@
 <tr>
   <td>8/28/2024</td>
   <td>$50,000</td>
-<td>4 + PB</td>
-<td>4 + PB</td>
-<td>5 + PB</td>
-<td>5 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="purple">5 + PB</td>
+<td class="purple">5 + PB</td>
 <td>2 of 5</td>
 <td>2 + PB</td>
 <td>2 + PB</td>
 <td>2 of 5</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
   <td>3</td>
 </tr>
 <tr>
   <td>8/31/2024</td>
   <td>$50,000</td>
-<td>4 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
-<td>4 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>2 + PB</td>
 <td>2 + PB</td>
 <td>3 + PB</td>
@@ -241,7 +242,7 @@
 <td>2 + PB</td>
 <td>2 + PB</td>
 <td>2 of 5</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>2 + PB</td>
 <td>3 + PB</td>
 <td>2 of 5</td>
@@ -258,8 +259,8 @@
 <td>3 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
-<td>4 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
 
@@ -272,7 +273,7 @@
 <td>1 of 5</td>
 <td>1 of 5</td>
 <td>2 of 5</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>2 of 5</td>
 <td>0 of 5</td>
 <td>3 + PB</td>
@@ -290,7 +291,7 @@
 <td>2 of 5</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>2 of 5</td>
 <td>3 + PB</td>
 <td>2 + PB</td>
@@ -300,8 +301,8 @@
 <tr>
   <td>9/14/2024</td>
   <td>$50,000</td>
-<td>5 + PB</td>
-<td>4 + PB</td>
+<td class="purple">5 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
 <td>1 + PB</td>
@@ -316,8 +317,8 @@
 <tr>
   <td>9/16/2024</td>
   <td>$50,000</td>
-<td>4 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
@@ -333,13 +334,13 @@
   <td>9/18/2024</td>
   <td>$50,000</td>
 <td>3 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
 <td>3 + 5</td>
 <td>4 + 5</td>
-<td>5 of 5</td>
+<td class="light-green">5 of 5</td>
 <td>2 of 5</td>
 <td>0 + PB</td>
 
@@ -348,8 +349,8 @@
 <tr>
   <td>9/21/2024</td>
   <td>$50,000</td>
-<td>4 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>2 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
@@ -369,9 +370,9 @@
 <td>1 of 5</td>
 <td>1 of 5</td>
 <td>1 of 5</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
-<td>5 of 5</td>
+<td class="light-green">5 of 5</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
 
@@ -385,7 +386,7 @@
 <td>3 + PB</td>
 <td>3 + PB</td>
 <td>1 of 5</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>2 + PB</td>
 <td>1 of 5</td>
 <td>2 of 5</td>
@@ -396,14 +397,14 @@
 <tr>
   <td>10/2/2024</td>
   <td>$50,000</td>
-<td>4 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
 <td>1 of 5</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>2 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>1 of 5</td>
 <td>2 of 5</td>
 
@@ -429,6 +430,7 @@
 
         </tbody>
             </table>
+          
           </div>
 
         </div>
@@ -447,10 +449,10 @@
                 Game Name
               </strong>
             </label>
-            <select class="form-select form-select-lg" id="GameCode" name="GameCode">
+            <input class="form-control form-control-lg" value="PowerBall" readonly id="GameCode" name="GameCode">
      
-      <option selected="selected" value="powerball">Powerball</option>
-      </select>
+      
+      
           </div>
       
           <div class="col-sm-12 col-md-auto">
@@ -528,14 +530,14 @@
 <tr>
   <td>4/14/2018</td>
   <td>$107.8 Million</td>
-<td>5 of 5</td>
-<td>4 + PB</td>
-<td>5 + PB</td>
-<td>5 of 5</td>
-<td>4 + PB</td>
+<td class="light-green">5 of 5</td>
+<td class="yellow">4 + PB</td>
+<td class="purple">5 + PB</td>
+<td class="light-green">5 of 5</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
-<td>5 of 5</td>
+<td class="light-green">5 of 5</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
   <td>1</td>
@@ -543,13 +545,13 @@
 <tr>
   <td>8/31/2024</td>
   <td>$50,000</td>
-<td>4 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
 <td>3 + PB</td>
-<td>4 + PB</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>2 + PB</td>
 <td>2 + PB</td>
 <td>3 + PB</td>
@@ -564,7 +566,7 @@
 <td>2 + PB</td>
 <td>2 + PB</td>
 <td>2 of 5</td>
-<td>4 + PB</td>
+<td class="yellow">4 + PB</td>
 <td>2 + PB</td>
 <td>3 + PB</td>
 <td>2 of 5</td>
@@ -581,35 +583,35 @@
   <td>2 + PB</td>
   <td>2 + PB</td>
   <td>1 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>4 + PB</td>
-  <td>5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="purple">5 + PB</td>
   <td>1</td>
 </tr>
 <tr>
   <td>6/22/2019</td>
   <td>$108.7 Million</td>
-  <td>5 of 5</td>
-  <td>5 of 5</td>
-  <td>5 of 5</td>
-  <td>4 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 of 5</td>
-  <td>5 of 5</td>
-  <td>5 of 5</td>
-  <td>5 of 5</td>
+  <td class="light-green">5 of 5</td>
+  <td class="light-green">5 of 5</td>
+  <td class="light-green">5 of 5</td>
+  <td class="yellow">4 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="light-green">5 of 5</td>
+  <td class="light-green">5 of 5</td>
+  <td class="light-green">5 of 5</td>
+  <td class="light-green">5 of 5</td>
   <td>1</td>
 </tr>
 <tr>
   <td>11/23/2019</td>
   <td>$90 Million</td>
-  <td>5 of 5</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
+  <td class="light-green">5 of 5</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
   <td>3 + PB</td>
-  <td>5 + PB</td>
+  <td class="purple">5 + PB</td>
   <td>3 + PB</td>
   <td>3 + PB</td>
   <td>3 + PB</td>
@@ -620,16 +622,16 @@
 <tr>
   <td>12/7/2019</td>
   <td>$130 Million</td>
-  <td>5 of 5</td>
-  <td>5 + PB</td>
-  <td>5 of 5</td>
-  <td>4 + PB</td>
-  <td>5 of 5</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 of 5</td>
-  <td>5 of 5</td>
-  <td>5 of 5</td>
+  <td class="light-green">5 of 5</td>
+  <td class="purple">5 + PB</td>
+  <td class="light-green">5 of 5</td>
+  <td class="yellow">4 + PB</td>
+  <td class="light-green">5 of 5</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="light-green">5 of 5</td>
+  <td class="light-green">5 of 5</td>
+  <td class="light-green">5 of 5</td>
   <td>1</td>
 </tr>
 <tr>
@@ -665,31 +667,31 @@
 <tr>
   <td>5/8/2021</td>
   <td>$155.9 Million</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
   <td>1</td>
 </tr>
 <tr>
   <td>11/8/2021</td>
   <td>$150.7 Million</td>
   <td>3 + PB</td>
-  <td>4 + PB</td>
-  <td>5 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
   <td>1</td>
 </tr>
 <tr>
@@ -697,44 +699,44 @@
   <td>$338.2 Million</td>
   <td>3 + PB</td>
   <td>3 + PB</td>
-  <td>5 of 5</td>
-  <td>5 of 5</td>
-  <td>5 of 5</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
+  <td class="light-green">5 of 5</td>
+  <td class="light-green">5 of 5</td>
+  <td class="light-green">5 of 5</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
   <td>1</td>
 </tr>
 <tr>
   <td>10/22/2022</td>
   <td>$591.3 Million</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
   <td>1</td>
 </tr>
 <tr>
   <td>12/12/2022</td>
   <td>$124.3 Million</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
   <td>1</td>
 </tr>
 <tr>
@@ -742,29 +744,29 @@
   <td>$754.6 Million</td>
   <td>3 + PB</td>
   <td>3 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
   <td>1</td>
 </tr>
 <tr>
   <td>5/27/2023</td>
   <td>$214.5 Million</td>
   <td>3 + PB</td>
-  <td>4 + PB</td>
-  <td>5 + PB</td>
-  <td>4 + PB</td>
-  <td>4 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
-  <td>5 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="yellow">4 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
+  <td class="purple">5 + PB</td>
   <td>1</td>
 </tr>
 <tr>
@@ -785,6 +787,7 @@
 
         </tbody>
             </table>
+         
           </div>
 
         </div>
@@ -803,10 +806,10 @@
                 Game Name
               </strong>
             </label>
-            <select class="form-select form-select-lg" id="GameCode" name="GameCode">
+            <input class="form-control form-control-lg" value="PowerBall" readonly id="GameCode" name="GameCode">
      
-      <option selected="selected" value="powerball">Powerball</option>
-      </select>
+      
+      
           </div>
       
           <div class="col-sm-12 col-md-auto">
@@ -855,14 +858,14 @@
               <tr>
                 <td>4/29/2024</td>
                 <td>$1 Million</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>4</td>
@@ -873,43 +876,43 @@
                 <td>3 + PB</td>
                 <td>3 + PB</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>2 of 5</td>
                 <td>3 + PB</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
-                <td>4 + PB</td>
+                <td class="yellow">4 + PB</td>
                 <td>1</td>
               </tr>
               <tr>
                 <td>5/13/2024</td>
                 <td>$1 Million</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>2 + PB</td>
                 <td>2</td>
               </tr>
               <tr>
                 <td>6/1/2024</td>
                 <td>$1 Million</td>
-                <td>4 + PB</td>
-                <td>4 + PB</td>
+                <td class="yellow">4 + PB</td>
+                <td class="yellow">4 + PB</td>
                 <td>3 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 of 5</td>
-                <td>4 + PB</td>
+                <td class="yellow">4 + PB</td>
                 <td>1</td>
               </tr>
               <tr>
@@ -917,27 +920,27 @@
                 <td>$1 Million</td>
                 <td>3 + PB</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>4 of 5</td>
                 <td>3 + PB</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>4</td>
               </tr>
               <tr>
                 <td>6/10/2024</td>
                 <td>$1 Million</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 of 5</td>
                 <td>2 of 5</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>3 + PB</td>
-                <td>4 + PB</td>
+                <td class="yellow">4 + PB</td>
                 <td>3 + PB</td>
                 <td>3 + PB</td>
                 <td>2</td>
@@ -945,15 +948,15 @@
               <tr>
                 <td>6/19/2024</td>
                 <td>$1 Million</td>
-                <td>4 + PB</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
                 <td>3 + PB</td>
                 <td>1</td>
               </tr>
@@ -963,28 +966,28 @@
                 <td>1 + PB</td>
                 <td>2 + PB</td>
                 <td>2 of 5</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 of 5</td>
-                <td>4 + PB</td>
+                <td class="yellow">4 + PB</td>
                 <td>2 + PB</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>2 + PB</td>
                 <td>1</td>
               </tr>
               <tr>
                 <td>6/29/2024</td>
                 <td>$1 Million</td>
-                <td>4 + PB</td>
-                <td>4 + PB</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="yellow">4 + PB</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>2 of 5</td>
                 <td>3 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>4</td>
               </tr>
               <tr>
@@ -993,26 +996,26 @@
                 <td>2 of 5</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3</td>
               </tr>
               <tr>
                 <td>7/13/2024</td>
                 <td>$1 Million</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
                 <td>3 + PB</td>
                 <td>3 + PB</td>
                 <td>3 + PB</td>
-                <td>4 + PB</td>
+                <td class="yellow">4 + PB</td>
                 <td>2 of 5</td>
                 <td>3 of 5</td>
                 <td>4</td>
@@ -1033,14 +1036,14 @@
                 <td><strong>20</strong></td>
               </tr>
             </table>
-            
+         
           </div>
 
         </div>
 
       </div>
     </div>
-    <div class="row mt-5 result-tab-content" id="all-results">
+    <div class="row mt-5 result-tab-content active" id="all-results">
       <div class="col">
         <h2>All Results By Model predicted since 2017
 
@@ -1053,10 +1056,10 @@
                 Game Name
               </strong>
             </label>
-            <select class="form-select form-select-lg" id="GameCode" name="GameCode">
+            <input class="form-control form-control-lg" value="PowerBall" readonly id="GameCode" name="GameCode">
      
-      <option selected="selected" value="powerball">Powerball</option>
-      </select>
+      
+      
           </div>
       
           <div class="col-sm-12 col-md-auto">
@@ -1086,7 +1089,7 @@
         <div class="card mb-5">
           <div class="card-body">
 
-            <table class="winners-table | table">
+            <table id="allResultsTable" class="winners-table | table">
               <tr>
                 <th class="text-center">Draw Date</th>
        
@@ -1109,14 +1112,14 @@
               <tr>
                 <td>4/11/2024</td>
              
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1126,14 +1129,14 @@
               <tr>
                 <td>4/14/2024</td>
              
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1143,14 +1146,14 @@
               <tr>
                 <td>4/16/2024</td>
              
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1160,14 +1163,14 @@
               <tr>
                 <td>4/18/2024</td>
              
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1176,14 +1179,14 @@
               </tr>
               <tr>
                 <td>4/22/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1192,14 +1195,14 @@
               </tr>
               <tr>
                 <td>4/24/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1208,14 +1211,14 @@
               </tr>
               <tr>
                 <td>4/26/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1224,14 +1227,14 @@
               </tr>
               <tr>
                 <td>4/28/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1240,14 +1243,14 @@
               </tr>
               <tr>
                 <td>4/30/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1256,14 +1259,14 @@
               </tr>
               <tr>
                 <td>5/2/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1272,14 +1275,14 @@
               </tr>
               <tr>
                 <td>5/4/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1288,14 +1291,14 @@
               </tr>
               <tr>
                 <td>5/6/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1304,14 +1307,14 @@
               </tr>
               <tr>
                 <td>5/8/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1320,14 +1323,14 @@
               </tr>
               <tr>
                 <td>4/22/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1336,14 +1339,14 @@
               </tr>
               <tr>
                 <td>4/24/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1352,14 +1355,14 @@
               </tr>
               <tr>
                 <td>4/26/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1368,14 +1371,14 @@
               </tr>
               <tr>
                 <td>4/28/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1384,14 +1387,14 @@
               </tr>
               <tr>
                 <td>4/30/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1400,14 +1403,14 @@
               </tr>
               <tr>
                 <td>5/2/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1416,14 +1419,14 @@
               </tr>
               <tr>
                 <td>5/4/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1432,14 +1435,14 @@
               </tr>
               <tr>
                 <td>5/6/2024</td>
-                <td>5 of 5</td>
-                <td>5 of 5</td>
-                <td>4 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="light-green">5 of 5</td>
+                <td class="yellow">4 + PB</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>1 of 5</td>
                 <td>3 + PB</td>
-                <td>5 of 5</td>
+                <td class="light-green">5 of 5</td>
                 <td>3 + PB</td>
                 <td>2 of 5</td>
                 <td>-</td>
@@ -1463,6 +1466,9 @@
                 <td><strong>47</strong></td>
               </tr>
             </table>
+            <div class="d-flex justify-content-center">
+              <button class="cmn-btn" id="readMoreBtn">Read More</button>
+            </div>
           </div>
 
         </div>
@@ -1471,6 +1477,7 @@
     </div>
 
   </div>
+
 </section>
   
 
@@ -1491,18 +1498,12 @@
                               <li><a href="previous-results.html">Predicted Results</a></li>
                               <li><a href="lottery-result.html">Lottery Results</a></li>
                               <li><a href="faq.html">Faqs</a></li>
+                              
                               <li><a href="winning-stories.html">Winning Stories</a></li>
 
                           </ul>
                       </div>
-                      <div class="single-box social">
-                          <ul class="d-flex">
-                              <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fab fa-dribbble"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
-                          </ul>
-                      </div>
+                    
                   </div>
               </div>
           </div>
@@ -1534,6 +1535,33 @@
     <script src="assets/js/plugin/plugin.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const rows = document.querySelectorAll("#allResultsTable tbody tr");
+    const readMoreBtn = document.getElementById("readMoreBtn");
+    const rowsPerPage = 15;
+    let currentVisible = rowsPerPage;
+
+
+    rows.forEach((row, index) => {
+        if (index >= rowsPerPage) row.style.display = "none";
+    });
+
+
+    readMoreBtn.addEventListener("click", function () {
+
+        for (let i = currentVisible; i < currentVisible + rowsPerPage; i++) {
+            if (rows[i]) rows[i].style.display = "table-row";
+        }
+        currentVisible += rowsPerPage;
+
+     
+        if (currentVisible >= rows.length) {
+            readMoreBtn.style.display = "none";
+        }
+    });
+});
+
+
       document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll('.tabs-area button');
     const tabContents = document.querySelectorAll('.result-tab-content');
