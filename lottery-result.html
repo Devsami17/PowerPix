@@ -68,7 +68,7 @@
                               </li> -->
                              
                               <li class="nav-item">
-                                  <a class="nav-link " href="previous-results.html">Predicted Results</a>
+                                  <a class="nav-link " href="previous-results.html">Predictions Results</a>
                               </li>
                               <li class="nav-item">
                                   <a class="nav-link active" href="lottery-result.html"> Lottery Results</a>
@@ -89,7 +89,7 @@
                               </div> -->
                               <div class="btn-area">
                                   <a href="buy-ticket.html" class="cmn-btn">
-                                     Buy Now
+                                     Get Pix
                                       <i class="icon-a-arrow-double"></i>
                                   </a>
                               </div>
@@ -104,7 +104,33 @@
 <section class="previous-results our-lotteries">
   <div class=" mt-5" id="drawResult">
 <h2 class="text-center">Power Ball Results</h2>
-  
+<div id="filter" class=" row ps-2 form-group align-items-center mb-3 mb-md-4">
+
+
+    <div class="col-sm-12 col-md-auto">
+      <label class="mb-2" for="StartDate">
+        <strong>Start Date</strong>
+      </label>
+      <input type="date" id="StartDate" class="form-control form-select-lg">
+    </div>
+    
+    <div class="col-sm-12 col-md-auto">
+      <label class="mb-2" for="EndDate">
+        <strong>End Date</strong>
+      </label>
+      <input type="date" id="EndDate" class="form-control form-select-lg">
+    </div>
+
+    <div class="col-sm-12 col-md-auto align-self-end">
+      <button id="searchNumbers" class="btn btn-primary btn-lg">
+        Search
+      </button>
+      <button id="clearNumbers" class="btn btn-secondary btn-lg">
+        Clear
+      </button>
+    </div>
+
+  </div>
     <div class="row mt-5 " >
       <div class="col">
         
@@ -122,6 +148,9 @@
                       <th scope="col" class="text-center">
                       Draw Day
                       </th>
+                      <th scope="col" class="text-center">
+                        Jackpot Amt $
+                        </th>
                         <th scope="col" class="text-center">
                          Model 1
                         </th>
@@ -153,66 +182,67 @@
                             Sat
 
                           </td>
+                          <td>$50,000</td>
                           <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
                               <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                <span class="item-ball">12</span>
-                                <span class="item-ball">2</span>
-                                <span class="item-ball">3</span>
-                                <span class="item-ball">4</span>
-                                <span class="item-ball">4</span>
-                                <span class="item-plus"></span>
-                                <span class="item-ball item-bonus">PB</span>
-                              </div>
-                            </div>
-                          </td>
-                          <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                <span class="item-ball">12</span>
                                 <span class="item-ball">2</span>
                                 <span class="item-ball">4</span>
-                                <span class="item-ball">5</span>
-                                <span class="item-ball">5</span>
-                                <span class="item-plus"></span>
-                                <span class="item-ball item-bonus">PB</span>
-                              </div>
-                            </div>
-                          </td>
-                          <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                <span class="item-ball">12</span>
-                                <span class="item-ball">1</span>
-                                <span class="item-ball">3</span>
-                                <span class="item-ball">4</span>
-                                <span class="item-ball">5</span>
-                                <span class="item-plus"></span>
-                                <span class="item-ball item-bonus">PB</span>
-                              </div>
-                            </div>
-                          </td>
-                          <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                <span class="item-ball">12</span>
-                                <span class="item-ball">3</span>
-                                <span class="item-ball">5</span>
-                                <span class="item-ball">6</span>
-                                <span class="item-ball">9</span>
-                                <span class="item-plus"></span>
-                                <span class="item-ball item-bonus">PB</span>
-                              </div>
-                            </div>
-                          </td>
-                          <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">8</span>
                                 <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">6</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">1</span>
                                 <span class="item-ball">5</span>
-                                <span class="item-ball">2</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
                                 <span class="item-ball">4</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
                                 <span class="item-ball">5</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
                                 <span class="item-plus"></span>
                                 <span class="item-ball item-bonus">PB</span>
                               </div>
@@ -221,527 +251,552 @@
                           <td>2x</td>
                       </tr>
                       <tr>
+                    
                         <td class="text-right text-md-center" data-label="Powerball Winners">
-                            1/6/2017
+                            1/10/2016
+
                         </td>
-                        <td class="text-right text-md-center" data-label="Powerball Prize">
-                            Min
-                        </td>
-                        <td data-label="Match">
+                          <td class="text-right text-md-center" data-label="Powerball Prize">
+                            Sat
+
+                          </td>
+                          <td>$50,000</td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">13</span>
-                                    <span class="item-ball">3</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">2</span>
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">8</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">14</span>
-                                    <span class="item-ball">4</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">6</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">11</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">15</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-ball">11</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td>3x</td>
-                    </tr>
-                    <tr>
+                          </td>
+                          <td>2x</td>
+                      </tr>
+                      <tr>
+                    
                         <td class="text-right text-md-center" data-label="Powerball Winners">
                             5/10/2019
-                        </td>
-                        <td class="text-right text-md-center" data-label="Powerball Prize">
-                            Tues
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">13</span>
-                                    <span class="item-ball">3</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">14</span>
-                                    <span class="item-ball">4</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">11</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">15</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-ball">11</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>3x</td>
-                    </tr>
-                    <tr>
-                        <td class="text-right text-md-center" data-label="Powerball Winners">
-                            6/10/2019
-                        </td>
-                        <td class="text-right text-md-center" data-label="Powerball Prize">
-                            Thurs
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">13</span>
-                                    <span class="item-ball">3</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">14</span>
-                                    <span class="item-ball">4</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">11</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">15</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-ball">11</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>3x</td>
-                    </tr>
-                    <tr>
-                        <td class="text-right text-md-center" data-label="Powerball Winners">
-                            7/1/2024
 
                         </td>
-                        <td class="text-right text-md-center" data-label="Powerball Prize">
+                          <td class="text-right text-md-center" data-label="Powerball Prize">
                             Sat
-                        </td>
-                        <td data-label="Match">
+
+                          </td>
+                          <td>$50,000</td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">13</span>
-                                    <span class="item-ball">3</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">2</span>
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">8</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">14</span>
-                                    <span class="item-ball">4</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">6</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">11</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">15</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-ball">11</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td>3x</td>
-                    </tr>
-                    <tr>
+                          </td>
+                          <td>2x</td>
+                      </tr>
+                      <tr>
+                    
                         <td class="text-right text-md-center" data-label="Powerball Winners">
-                            7/10/2024
+                            10/10/2019
 
                         </td>
-                        <td class="text-right text-md-center" data-label="Powerball Prize">
-                            Wed
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">13</span>
-                                    <span class="item-ball">3</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">14</span>
-                                    <span class="item-ball">4</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">11</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">15</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-ball">11</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>3x</td>
-                    </tr>
-                    <tr>
-                        <td class="text-right text-md-center" data-label="Powerball Winners">
-                            7/20/2024
-
-                        </td>
-                        <td class="text-right text-md-center" data-label="Powerball Prize">
-                            Fri
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">13</span>
-                                    <span class="item-ball">3</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">14</span>
-                                    <span class="item-ball">4</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">11</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td data-label="Match">
-                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">15</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-ball">11</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>3x</td>
-                    </tr>
-                    <tr>
-                        <td class="text-right text-md-center" data-label="Powerball Winners">
-                            8/10/2024
-
-                        </td>
-                        <td class="text-right text-md-center" data-label="Powerball Prize">
+                          <td class="text-right text-md-center" data-label="Powerball Prize">
                             Sat
-                        </td>
-                        <td data-label="Match">
+
+                          </td>
+                          <td>$50,000</td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">13</span>
-                                    <span class="item-ball">3</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">2</span>
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">8</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">14</span>
-                                    <span class="item-ball">4</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">6</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">11</span>
-                                    <span class="item-ball">5</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">6</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">8</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
-                        </td>
-                        <td data-label="Match">
+                          </td>
+                          <td data-label="Match">
                             <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
-                                <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
-                                    <span class="item-ball">15</span>
-                                    <span class="item-ball">7</span>
-                                    <span class="item-ball">9</span>
-                                    <span class="item-ball">10</span>
-                                    <span class="item-ball">11</span>
-                                    <span class="item-plus"></span>
-                                    <span class="item-ball item-bonus">PB</span>
-                                </div>
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
                             </div>
+                          </td>
+                          <td>2x</td>
+                      </tr>
+                      <tr>
+                    
+                        <td class="text-right text-md-center" data-label="Powerball Winners">
+                            1/1/2024
+
                         </td>
-                        <td>3x</td>
-                    </tr>
+                          <td class="text-right text-md-center" data-label="Powerball Prize">
+                            Sat
+
+                          </td>
+                          <td>$50,000</td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">2</span>
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">8</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">6</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>2x</td>
+                      </tr>
+                      <tr>
+                    
+                        <td class="text-right text-md-center" data-label="Powerball Winners">
+                            1/10/2024
+
+                        </td>
+                          <td class="text-right text-md-center" data-label="Powerball Prize">
+                            Sat
+
+                          </td>
+                          <td>$50,000</td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">2</span>
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">8</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">6</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>2x</td>
+                      </tr>
+                      <tr>
+                    
+                        <td class="text-right text-md-center" data-label="Powerball Winners">
+                            3/3/2024
+
+                        </td>
+                          <td class="text-right text-md-center" data-label="Powerball Prize">
+                            Sat
+
+                          </td>
+                          <td>$50,000</td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">2</span>
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">8</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">6</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>2x</td>
+                      </tr>
+                      <tr>
+                    
+                        <td class="text-right text-md-center" data-label="Powerball Winners">
+                            8/2/2024
+
+                        </td>
+                          <td class="text-right text-md-center" data-label="Powerball Prize">
+                            Sat
+
+                          </td>
+                          <td>$50,000</td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">2</span>
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">8</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">6</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">1</span>
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">14</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">4</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-ball">16</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-label="Match">
+                            <div class="row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                              <div class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                <span class="item-ball">5</span>
+                                <span class="item-ball">7</span>
+                                <span class="item-ball">9</span>
+                                <span class="item-ball">10</span>
+                                <span class="item-ball">12</span>
+                                <span class="item-plus"></span>
+                                <span class="item-ball item-bonus">PB</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td>2x</td>
+                      </tr>     
+
 
                     </tbody>
                   </table>

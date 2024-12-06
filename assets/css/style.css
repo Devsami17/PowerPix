@@ -370,7 +370,7 @@ label {
 .xltxt {
   font-size: 26px;
   line-height: 36px;
-  margin-top: -7px;
+  /* margin-top: -7px; */
 }
 
 .lgtxt {
@@ -430,6 +430,10 @@ label {
 }
 
 @media (max-width: 991px) {
+  .our-goal p{
+    font-size: 15px !important;
+line-height: 20px !important;
+  }
   .pt-120 {
     padding-top: 60px;
   }
@@ -500,7 +504,21 @@ max-width: 100%;
     padding-right: 10px !important;
   }
   #drawResult table{
-    width: 1200px !important;
+    width: 1800px !important;
+  }
+  #filter button{
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  #filter .form-select-lg{
+    font-size: 14px;
+  }
+  .previous-results .tabs-area button{
+    width: 95% !important;
+    margin-bottom: 5px;
+  }
+  .previous-results .tabs-area{
+    flex-wrap: wrap;
   }
   #drawResult .card-body{
     overflow: auto !important;
@@ -1291,12 +1309,13 @@ footer{
 .lottery-slider .lottery-carousel {
   margin-bottom: -60px;
 }
-.lottery-slider .single-slide {
+.single-slide {
   background-color: var(--section-3rd-color);
   box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   text-align: center;
-  height: 328px;
+  height: 370px;
+  width: 350px;
   /* background-image: url(../images/lottery-vector-1.png); */
   transition: 0.3s all;
   background-repeat: no-repeat;
@@ -1306,31 +1325,37 @@ footer{
   margin: 0 10px;
   margin-bottom: 20px;
 }
-.lottery-slider .single-slide:hover {
+.single-slide h6{
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-top: 12px;
+
+}
+.single-slide:hover {
   background-image: url(../images/lottery-vector-2.png);
 }
-.lottery-slider .single-slide .icon-area img {
+ .single-slide .icon-area img {
   /* box-shadow: 0px 6px 30px #3B4D36; */
   height: 130px;
   width: 130px;
   border-radius: 50%;
   margin: auto;
 }
-.lottery-slider .single-slide h5 {
+.single-slide h5 {
   margin: 22px 0 6px;
 }
-.lottery-slider .single-slide p span {
+ .single-slide p span {
  color: var(--para-color);
  font-weight: 700;
 }
-.lottery-slider .single-slide .lgtxt {
+ .single-slide .lgtxt {
   color: var(--heading-2nd-color);
   margin: 5px 0 8px;
 }
-.lottery-slider .slick-list {
+.slick-list {
   margin-bottom: 40px;
 }
-.lottery-slider .slick-arrow {
+.slick-arrow {
   top: calc(50% - 40px);
 }
 .lottery-slider .slick-arrow.arafat-prev {
@@ -2677,7 +2702,7 @@ footer{
     display: none;
   }
   .banner-section .overlay .banner-content {
-    padding: 160px 0 110px;
+    padding: 100px 0 60px;
   }
   .section-text {
     margin-bottom: 20px;
@@ -3628,13 +3653,14 @@ font-weight: 600;
 }
 .previous-results{
   padding: 120px 0 115px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
 }
 @media only screen and (min-width:1800px) {
   .banner-content-1{
 padding: 60px 0px;
   }
+  
 }
 .previous-results .package-selector{
   display: flex;
@@ -3670,14 +3696,32 @@ padding: 60px 0px;
   height: 60px;
   width: 240px;
 background-color: #fff;
-border: 1px solid #c6c6c6;
+
+
+/* border: 1px solid #c6c6c6; */
 }
-.previous-results .tabs-area button.active{
+/* .previous-results .tabs-area button.active{
   background-color: var(--primary-color);
   color: #fff;
   border: none;
   font-weight: 600;
-}
+} */
+.previous-results .tabs-area button.all-results{  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-weight: 600;}
+  .previous-results .tabs-area button.fiveoffive{  background-color:rgb(192, 240, 199);
+    color: #000;
+    border: none;
+    font-weight: 600;}
+    .previous-results .tabs-area button.fivePB{  background-color: rgb(112, 48, 161);
+      color: #fff;
+      border: none;
+      font-weight: 600;}
+      .previous-results .tabs-area button.fourPB{  background-color: rgb(255, 255, 0);
+        color: #000;
+        border: none;
+        font-weight: 600;}
 .previous-results h2{
   font-size: 34px;
   text-align: center;
@@ -3729,5 +3773,218 @@ color: #000;
 .winners-table tr td.light-green{
 
 
+  background-color: rgb(192, 240, 199);
+}
+section .part-1 img{
+  height: auto;
+  width: auto;
+}
+section .part-1 {
+  width: 48%;
+}
+section .part-2 {
+  width: 48%;
+}
+.section-3{
+  padding-top:20px;
+  padding-bottom: 80px;
+}
+.section-3 h2{
+  font-size: 50px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+  font-family: var(--head-font);
+}
+.section-3 p{
+  font-size: 20px;
+  text-align: center;
+  font-family: var(--para-font);
+  color: var(--para-color);
+  font-weight: 500;
+
+}
+.section-3  button , .section-4 button , .section-5 button , .section-6 button , .section-9 button{
+  margin-top: 30px;
+  margin-left:  auto;
+  margin-right:  auto;
+
+  display: block;
+}
+.section-4 {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.section-4 h2{
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+  line-height: 35px;
+  margin-bottom: 20px;
+  font-family: var(--head-font);
+}
+section .divider{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-4 p{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-family: var(--para-font);
+  color: var(--para-color);
+}
+.section-5 , .section-6 , .section-7 , .section-8{
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.section-5 p , .section-6 p{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-family: var(--para-font);
+  color: var(--para-color);
+}
+section p strong , section li strong{
+  font-family: var(--head-font);
+  color: #000;
+  /* font-weight: 800; */
+}
+.section-7 h2 , .section-8 h2{
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+  line-height: 35px;
+  margin-bottom: 20px;
+  font-family: var(--head-font);
+}
+.section-7 ul , .section-8 ul{
+  padding-left: 2rem;
+  list-style:disc;
+}
+.section-7 ul li , .section-8 ul li{
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #000;
+}
+.section-8 p{
+  padding-left: 2rem;
+}
+.section-7 p , .section-8 p{
+  font-size: 20px;
+  /* text-align: center; */
+  font-weight: 500;
+  font-family: var(--para-font);
+  color: var(--para-color);
+  margin-top: 10px;
+}
+.section-7 a{
+  text-decoration: underline;
+  color: var(--blue);
+}
+.section-9{
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.section-9 p{
+  margin-bottom: 24px;
+  font-size: 20px;
+  /* text-align: center; */
+  font-weight: 500;
+  font-family: var(--para-font);
+  color: var(--para-color);
+}
+.section-9  h2{
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+  line-height: 35px;
+  margin-bottom: 20px;
+  font-family: var(--head-font);
+}
+@media only screen and (min-width:300px) and (max-width:600px){
+
+  .section-1 p{
+    font-size: 16px !important;
+    line-height: 30px !important;
+  }
+  .section-3 h2 {
+    margin-top: 0px !important;
+    line-height: 60px !important;
+
+  }
+
+  .section-3 p{
+    font-size: 16px !important;
+    line-height: 30px !important;
+  }
+  .section-4 h2 {
+font-size: 28px !important;
+line-height: 40px !important;
+  }
+  section .divider{
+    flex-wrap: wrap;
+  }
+  section .part-1{
+    width: 100% !important;
+  }
+  section .part-2{
+    width: 100% !important;
+    margin-top: 30px;
+  }
+  .section-4 p , .section-5 p ,.section-6 p{
+    line-height: 28px !important;
+  }
+  .section-5, .section-6, .section-7, .section-8{
+    padding-bottom: 25px !important;
+  }
+  .section-7 p, .section-8 p {
+    line-height: 28px !important;
+    padding-left:0px !important ;
+    font-size: 16px !important;
+
+  }
+  .section-7 ul li, .section-8 ul li {
+    line-height: 25px !important;
+  }
+  .section-9 p{
+    line-height: 30px !important;
+    font-size: 16px !important;
+  }
+}
+.total-row{
+  position: absolute;
+  width: 100%;
+
+left: 80%;
+  top: 100%;
+  bottom: 0;
+}
+table{
+  position: relative;
+}.our-goal p{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: var(--para-font);
+  color: var(--para-color);
+  font-weight: 500;
+}
+.winners-table .left-border-black{
+  border-left: 2px solid #000;
+}
+.winners-table .right-border-black{
+  border-right: 2px solid #000;
+}
+.winners-table tr th.yellow {
+  background-color: rgb(255, 255, 0);
+}
+.winners-table tr th.purple {
+  background-color: rgb(112, 48, 161);
+  color: #fff;
+
+}
+.winners-table tr th.green {
   background-color: rgb(192, 240, 199);
 }
