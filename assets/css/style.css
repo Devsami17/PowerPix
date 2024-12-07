@@ -454,6 +454,10 @@ line-height: 20px !important;
   }
 }
 @media (max-width: 575px) {
+  footer img{
+    width: 200px !important;
+    height:auto !important;
+  }
 
   #jactpot input{
 width: 50% !important;
@@ -2505,6 +2509,12 @@ footer{
   .ticket-checker .overlay {
     background-position: left 40px bottom;
     background-size: 45%;
+  }
+  
+}
+@media only screen and (min-width:1400px){
+  .header-section .navbar{
+    padding: 8px 15px !important;
   }
 }
 @media (max-width: 1399px) {
