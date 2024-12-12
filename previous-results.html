@@ -68,7 +68,7 @@
                               </li> -->
                              
                               <li class="nav-item">
-                                  <a class="nav-link active" href="previous-results.html">Predictions Results</a>
+                                <a class="nav-link active" style="cursor: pointer;" onclick="redirectPreviousResultAllResult()">Predictions Results</a>
                               </li>
                               <li class="nav-item">
                                   <a class="nav-link" href="lottery-result.html"> Lottery Results</a>
@@ -101,10 +101,10 @@
       </div>
   </header>
     <!-- header-section end -->
-<section class="previous-results">
+<section class="previous-results" id="Predictions-result">
   <div class=" mt-5" id="drawResult">
     <div class="tabs-area">
-      <button data-tab="all-results" class="active all-results">All Results</button>
+      <button data-tab="all-results" class=" all-results">All Results</button>
       <button data-tab="5+pb" class="fivePB">5+PB</button>
       <button data-tab="5-of-5" class="fiveoffive">5 of 5</button>
       <button data-tab="4+pb" class="fourPB">4+PB</button>
@@ -1043,7 +1043,7 @@
 
       </div>
     </div>
-    <div class="row mt-5 result-tab-content active" id="all-results">
+    <div class="row mt-5 result-tab-content " id="all-results">
       <div class="col">
         <h2>All Results By Model predicted since 2017
 
@@ -1495,8 +1495,8 @@
                       <div class="single-box">
                           <ul class="items gap-3 d-flex flex-wrap align-items-center">
                               <li><a href="about.html">About us</a></li>
-                              <li><a href="previous-results.html">Predicted Results</a></li>
-                              <li><a href="lottery-result.html">Lottery Results</a></li>
+                              <li><a href="terms&condition.html">Terms & Conditions</a></li>
+                              <li><a href="privacy&policy.html">Responsible Gaming</a></li>
                               <li><a href="faq.html">Faqs</a></li>
                               
                               <li><a href="winning-stories.html">Winning Stories</a></li>
@@ -1562,35 +1562,47 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-      document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll('.tabs-area button');
     const tabContents = document.querySelectorAll('.result-tab-content');
 
-
     function switchTab(targetTab) {
- 
-      buttons.forEach(button => button.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
+        buttons.forEach(button => button.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
 
-      targetTab.classList.add('active');
+        targetTab.classList.add('active');
 
-      const targetId = targetTab.getAttribute('data-tab');
-      const targetTabContent = document.getElementById(targetId);
-      if (targetTabContent) {
-        targetTabContent.classList.add('active');
-      }
+        const targetId = targetTab.getAttribute('data-tab');
+        const targetTabContent = document.getElementById(targetId);
+        if (targetTabContent) {
+            targetTabContent.classList.add('active');
+        }
+
+        
     }
 
    
-    document.querySelector('button.active').click();
-
+    const storedTabId = localStorage.getItem('activeTabId');
+    if (storedTabId) {
+        const storedTab = document.querySelector(`.tabs-area button[data-tab="${storedTabId}"]`);
+        if (storedTab) {
+            switchTab(storedTab);
+        }
+    } else {
+       
+        const defaultTab = document.querySelector('.tabs-area button.all-results');
+        if (defaultTab) {
+            switchTab(defaultTab);
+        }
+    }
 
     buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        switchTab(button);
-      });
+        button.addEventListener('click', function() {
+            switchTab(button);
+        });
     });
-  });
+});
+
     </script>
 </body>
 

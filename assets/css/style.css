@@ -187,9 +187,11 @@ button {
 .single-input {
   margin-bottom: 25px;
 }
-
+.single-input select{
+  border: 1px solid var(--border-color);
+}
 input,
-textarea {
+textarea, select {
   padding: 10px 20px;
   color: var(--heading-color);
   width: 100%;
@@ -454,9 +456,22 @@ line-height: 20px !important;
   }
 }
 @media (max-width: 575px) {
+  .section-3 h2 {
+    font-size: 32px !important;
+    line-height: 34px !important;
+  }
+  .timer-banner .content h3{
+    font-size: 2.57rem !important;
+  }
+  .timer-banner .content {
+    padding: 20px 20px !important;
+  }
   footer img{
     width: 200px !important;
     height:auto !important;
+  }
+  .winners-table .game-balls .item-ball{
+    padding-top: 5px;
   }
 
   #jactpot input{
@@ -1194,7 +1209,7 @@ max-width: 100%;
   color: #fff;
 }
 .banner-section .overlay .banner-content {
-  padding: 124px 0 103px;
+  padding: 124px 0 40px;
 }
 .banner-section .overlay .shape-area img {
   position: absolute;
@@ -3804,10 +3819,11 @@ section .part-2 {
   padding-bottom: 80px;
 }
 .section-3 h2{
-  font-size: 50px;
+  font-size: 42px;
   text-align: center;
   color: #000;
   margin-bottom: 20px;
+  text-transform: none !important;
   font-family: var(--head-font);
 }
 .section-3 p{
@@ -3926,7 +3942,7 @@ section p strong , section li strong{
   }
   .section-3 h2 {
     margin-top: 0px !important;
-    line-height: 60px !important;
+    line-height: 40px !important;
 
   }
 
@@ -4002,8 +4018,14 @@ table{
   color: #fff;
 
 }
+#Predictions-result .winners-table tr th{
+  border-bottom: 3px solid #000 !important;
+}
 .winners-table tr th.green {
   background-color: rgb(192, 240, 199);
+}
+.privacy-policy ul li{
+  font-size: 16px;
 }
 .about-ul li{
   list-style: disc;
@@ -4014,4 +4036,52 @@ table{
 }
 #select-pack{
   border: 2px solid #e3e3e3;
+}
+.privacy-policy h2{
+  font-size: 24px;
+  font-family: var(--head-font);
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 55px;
+}
+.privacy-policy p{
+  font-size: 16px;
+  font-family: var(--para-font);
+  line-height: 24px;
+
+}
+.timer-banner {
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-bottom: 40px;
+
+  background-image: url('../images/PowerBall-header.webp');
+}
+.timer-banner  .content{
+  height: 270px;
+  color: #fff;
+  padding: 20px 40px;
+}
+.timer-banner  .content h3{
+  color: #fff;
+  font-size: 3.57rem;
+  margin-top: 0px;
+  line-height: 75px;
+  font-weight: Bold;
+  font-family: var(--head-font);
+
+}
+.timer-banner  .content i{
+font-size: 16px;
+}
+.timer-banner  .content span{
+  color:#fff ;
+  font-size: 16px;
+  margin-left: 5px;
+  font-family: var(--para-font);
 }

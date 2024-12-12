@@ -255,3 +255,7 @@ function clearCheckNumbers(){
   document.querySelectorAll('.check-your-numbers-card').forEach((item)=>item.classList.remove('active'))
 document.querySelectorAll('.check-your-numbers #filter .item-powerball').forEach((item)=>item.value="")
 }
+function redirectPreviousResultAllResult(){
+  localStorage.setItem('activeTabId', 'all-results');
+  window.location = 'previous-results.html';
+}

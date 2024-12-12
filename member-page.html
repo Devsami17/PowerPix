@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Power Pix</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/arafat-font.css">
+    <link rel="stylesheet" href="assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- <link href="assets/profile/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/profile/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/profile/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- start preloader -->
+    <div class="preloader align-items-center justify-content-center">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+        </div>
+    </div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
+                           
+                            <img height="350px" width="350px" src="assets/images/main-logo.png" class="logo" alt="logo">
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-content">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="index.html">Home</a>
+                                </li>
+                               
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="lotteries.html">Lotteries</a>
+                                </li> -->
+                                <!-- <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Results</a>
+                                    <ul class="dropdown-menu main-menu shadow show">
+                                        <li><a class="nav-link" href="previous-results.html">Previous Results</a></li>
+                                        
+                                        <li><a class="nav-link" href="check-your-numbers.html">Check Your Numbers</a></li>
+                                        <li><a class="nav-link" href="winning-stories.html">Winning Stories</a></li>
+                                 
+                                    </ul>
+                                </li> -->
+                               
+                                <li class="nav-item">
+                                    <a class="nav-link" style="cursor: pointer;" onclick="redirectPreviousResultAllResult()">Predictions Results</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="lottery-result.html"> Lottery Results</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="signup.html"> My Account</a>
+                                </li>
+                            
+                            </ul>
+                            <div class="right-area d-flex gap-3 gap-xl-5 align-items-center">
+                                <!-- <div class="switch-wrapper d-flex gap-2 align-items-center">
+                                    <i class="icon-g-sun sun"></i>
+                                    <label class="switch">
+                                        <input type="checkbox" id="checkbox" class="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                    <i class="icon-h-moon moon"></i>
+                                </div> -->
+                                <div class="btn-area">
+                                    <a href="buy-ticket.html" class="cmn-btn">
+                                       Get Pix
+                                        <i class="icon-a-arrow-double"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-section end -->
+
+    <!-- inner banner start -->
+    <section class="banner-section inner-banner section-bg about">
+        <div class="banner-content position-relative d-flex align-items-center">
+            <div class="container">
+                <div class="row d-flex justify-content-start">
+                    <div class="col-lg-6">
+                        <div class="text-area">
+                            <h2>My Account</h2>
+                       
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="illus-area position-absolute bottom-0">
+                            <img src="assets/images/signup-illus.png" class="wow fadeInUp" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
+
+    <section class="section container profile mt-5 mb-5">
+        <div class="row">
+          <div class="col-xl-3">
+  
+            <div class="card">
+              <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+  
+                <img src="assets/images/messages-3.jpg" alt="Profile" class="rounded-circle">
+                <h2>Adnan Khan</h2>
+                <h3>Individual</h3>
+               
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="col-xl-9">
+  
+            <div class="card">
+              <div class="card-body overflow-auto pt-3">
+                <!-- Bordered Tabs -->
+                <ul class="nav nav-tabs nav-tabs-bordered">
+  
+                  <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Overview</button>
+                  </li>
+  
+                  <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Your Ticket</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Edit Profile</button>
+                  </li>
+  
+  
+                  <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Change Password</button>
+                  </li>
+  
+                </ul>
+                <div class="tab-content pt-2">
+  
+                  <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                    
+  
+                    <h5 class="card-title">Profile Details</h5>
+  
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 label ">Member Since</div>
+                        <div class="col-lg-9 col-md-8">Dec 2018</div>
+                      </div>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label ">First Name</div>
+                      <div class="col-lg-9 col-md-8">Adnan</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 label ">Last Name</div>
+                        <div class="col-lg-9 col-md-8">Khan</div>
+                      </div>
+  
+                   
+  
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Registration Type</div>
+                      <div class="col-lg-9 col-md-8">Individual</div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Country</div>
+                      <div class="col-lg-9 col-md-8">USA</div>
+                    </div>
+  
+                   
+  
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Phone</div>
+                      <div class="col-lg-9 col-md-8">(436) 486-35382</div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 label">Email</div>
+                      <div class="col-lg-9 col-md-8">k.anderson@example.com</div>
+                    </div>
+  
+                  </div>
+  
+                  <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+  
+                    <!-- Profile Edit Form -->
+                    <form>
+                      <div class="row mb-3">
+                        <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile Image</label>
+                        <div class="col-md-8 col-lg-9">
+                          <img src="assets/images/messages-3.jpg" alt="Profile">
+                          <div class="pt-2">
+                            <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">First Name</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="FirstName" value="Kevin Anderson">
+                        </div>
+                      </div>
+  
+                      <div class="row mb-3">
+                        <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Last Name</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="fullName" type="text" class="form-control" id="LastName" value="Kevin Anderson">
+                        </div>
+                      </div>
+  
+  
+                      <div class="row mb-3">
+                        <label for="company" class="col-md-4 col-lg-3 col-form-label">Type</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="company" type="text" class="form-control" readonly id="company" value="Individual">
+                        </div>
+                      </div>
+  
+                      
+  
+                      <div class="row mb-3">
+                        <label for="Country" class="col-md-4 col-lg-3 col-form-label">Country</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="country" type="text" class="form-control" id="Country" value="USA">
+                        </div>
+                      </div>
+  
+                      
+  
+                      <div class="row mb-3">
+                        <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="phone" type="text" class="form-control" id="Phone" value="(436) 486-3538 x29071">
+                        </div>
+                      </div>
+  
+                      <div class="row mb-3">
+                        <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="email" type="email" class="form-control" id="Email" value="k.anderson@example.com">
+                        </div>
+                      </div>
+  
+                   
+  
+                      <div class="text-center">
+                        <button type="submit" class="cmn-btn">Save Changes</button>
+                      </div>
+                    </form><!-- End Profile Edit Form -->
+  
+                  </div>
+  
+                  <div class="tab-pane fade pt-3 our-lotteries" id="profile-settings">
+                    <table class="winners-table | table" id="drawResult">
+                        <thead>
+                        <tr class="bg-red text-light">
+                          <th scope="col" class="match-col">
+                           Draw Date
+                          </th>
+                         
+                          <th scope="col" class="text-center">
+                            Prize
+                            </th>
+                            <th scope="col" class="text-center">
+                             PB Numbers
+                            </th>
+                            <th scope="col" class="text-center">
+                                Status
+                               </th>
+                              
+                                    
+                        </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                        
+                            <td class="text-right text-md-center" data-label="Powerball Winners">
+                                30/12/2024
+    
+                            </td>
+                             
+                              <td>$50,000</td>
+                              <td data-label="Match">
+                                <div  class=" row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                                  <div style="margin: auto;" class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                    <span class="item-ball">2</span>
+                                    <span class="item-ball">4</span>
+                                    <span class="item-ball">8</span>
+                                    <span class="item-ball">10</span>
+                                    <span class="item-ball">12</span>
+                                    <span class="item-plus"></span>
+                                    <span class="item-ball item-bonus">20</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Pending</td>
+                             
+                          </tr>
+                          <tr>
+                        
+                            <td class="text-right text-md-center" data-label="Powerball Winners">
+                                30/12/2024
+    
+                            </td>
+                             
+                              <td>$50,000</td>
+                              <td data-label="Match">
+                                <div  class=" row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                                  <div style="margin: auto;" class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                    <span class="item-ball">2</span>
+                                    <span class="item-ball">4</span>
+                                    <span class="item-ball">8</span>
+                                    <span class="item-ball">10</span>
+                                    <span class="item-ball">12</span>
+                                    <span class="item-plus"></span>
+                                    <span class="item-ball item-bonus">20</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Pending</td>
+                             
+                          </tr>
+                          <tr>
+                        
+                            <td class="text-right text-md-center" data-label="Powerball Winners">
+                                30/12/2024
+    
+                            </td>
+                             
+                              <td>$50,000</td>
+                              <td data-label="Match">
+                                <div  class=" row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                                  <div style="margin: auto;" class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                    <span class="item-ball">2</span>
+                                    <span class="item-ball">4</span>
+                                    <span class="item-ball">8</span>
+                                    <span class="item-ball">10</span>
+                                    <span class="item-ball">12</span>
+                                    <span class="item-plus"></span>
+                                    <span class="item-ball item-bonus">20</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Pending</td>
+                             
+                          </tr>
+                          <tr>
+                        
+                            <td class="text-right text-md-center" data-label="Powerball Winners">
+                                30/12/2024
+    
+                            </td>
+                             
+                              <td>$50,000</td>
+                              <td data-label="Match">
+                                <div  class=" row col-md-auto gap-md-3 mx-0 align-items-md-center d-block d-md-flex m1-pb clearfix">
+                                  <div style="margin: auto;" class="game-balls float-sm-end w-auto px-0 item-powerball m5-pb">
+                                    <span class="item-ball">2</span>
+                                    <span class="item-ball">4</span>
+                                    <span class="item-ball">8</span>
+                                    <span class="item-ball">10</span>
+                                    <span class="item-ball">12</span>
+                                    <span class="item-plus"></span>
+                                    <span class="item-ball item-bonus">20</span>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>Pending</td>
+                             
+                          </tr>
+
+    
+    
+                        </tbody>
+                      </table>
+              
+  
+                  </div>
+  
+                  <div class="tab-pane fade pt-3" id="profile-change-password">
+                    <!-- Change Password Form -->
+                    <form>
+  
+                      <div class="row mb-3">
+                        <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="password" type="password" class="form-control" id="currentPassword">
+                        </div>
+                      </div>
+  
+                      <div class="row mb-3">
+                        <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="newpassword" type="password" class="form-control" id="newPassword">
+                        </div>
+                      </div>
+  
+                      <div class="row mb-3">
+                        <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New Password</label>
+                        <div class="col-md-8 col-lg-9">
+                          <input name="renewpassword" type="password" class="form-control" id="renewPassword">
+                        </div>
+                      </div>
+  
+                      <div class="text-center">
+                        <button type="submit" class="cmn-btn">Change Password</button>
+                      </div>
+                    </form><!-- End Change Password Form -->
+  
+                  </div>
+  
+                </div><!-- End Bordered Tabs -->
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section section-bg">
+        <div class="footer-area">
+            <div class="container">
+                <div class="row wrapper mt-80 mb-80">
+                    <div class="col-xl-12 cus-mar d-flex flex-wrap align-items-center justify-content-between top-area">
+                        <div class="single-box">
+                            <a href="index.html">
+                                <img height="350px" width="350px" src="assets/images/main-logo.png" class="logo" alt="logo">
+                            </a>
+                        </div>
+                        <div class="single-box">
+                            <ul class="items gap-3 d-flex flex-wrap align-items-center">
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="terms&condition.html">Terms & Conditions</a></li>
+                                <li><a href="privacy&policy.html">Responsible Gaming</a></li>
+                                <li><a href="faq.html">Faqs</a></li>
+                                
+                                <li><a href="winning-stories.html">Winning Stories</a></li>
+
+                            </ul>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="copyright text-center">
+                            <p class="text-white">ThePowerPix.com is not affiliated with the Multi-State Lottery Association or any State lottery. The content and operations of this website have not been approved or endorsed by MUSL or any other state lottery organisation.</p>
+                            <p class="text-white">Copyright © 2024. All Right Reserved By <a href="javascript:void(0)">Power Pix</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugin/counter.js"></script>
+    <script src="assets/js/plugin/waypoint.min.js"></script>
+    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugin/wow.min.js"></script>
+    <script src="assets/js/plugin/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

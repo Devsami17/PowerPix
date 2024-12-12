@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/arafat-font.css">
     <link rel="stylesheet" href="assets/css/plugin/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -68,7 +69,7 @@
                                 </li> -->
                                
                                 <li class="nav-item">
-                                    <a class="nav-link " href="previous-results.html">Predictions Results</a>
+                                    <a class="nav-link" style="cursor: pointer;" onclick="redirectPreviousResultAllResult()">Predictions Results</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="lottery-result.html"> Lottery Results</a>
@@ -139,7 +140,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="form-area">
-                            <form action="#">
+                            <form action="member-page.html">
                                 <div class="text-center">
                                     <h4>Create an Account</h4>
                                 </div>
@@ -180,30 +181,37 @@
                                             <input type="text" placeholder="Enter Confirm Password" id="cpassword" autocomplete="off">
                                         </div>
                                     </div>
+                                      <div class="col-sm-6">
+                                        <div class="single-input">
+                                            <label for="cpassword">Select Your Registeration Type</label>
+                                            <select name="" id="">
+                                                <option value="" hidden>Select a type</option>
+                                                <option value="">Individual</option>
+                                                <option value="">Group</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <form action="?" method="POST">
+      <div class="g-recaptcha mb-4" data-sitekey="y6LdprZkqAAAAAJAheOaKJkNfx4y3DjqVfMKuRlz1"></div>
+      <br/>
+      
+    </form>
                                     <div class="col-sm-12">
                                         <div class="function-area text-center">
                                             <div class="check-area d-flex align-items-center justify-content-center">
-                                                <label class="checkbox-wrapper">I agree to the <a href="javascript:void(0)">Terms</a>,<a href="javascript:void(0)">Privacy Policy</a> and <a href="javascript:void(0)">Fees</a>
+                                                <label class="checkbox-wrapper">I agree to the <a href="terms&condition.html">Terms</a>and<a href="privacy&policy.html">Respobsile Gaming</a>
                                                     <input type="checkbox" checked="checked">
                                                     <span class="checkmark"></span>
                                                 </label>
                                             </div>
                                             <div class="btn-area mt-3">
-                                                <button class="cmn-btn">
+                                                <button onclick="window.location='member-page.html'" class="cmn-btn" >
                                                     Signup
                                                     <i class="icon-a-arrow-double"></i>
                                                 </button>
                                             </div>
                                             <p class="already-acc mt-3">Already have an account? <a href="signin.html">Login</a></p>
-                                            <span class="or">or</span>
-                                            <div class="social">
-                                                <ul class="d-flex justify-content-center">
-                                                    <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="fab fa-dribbble"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
-                                                    <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
-                                                </ul>
-                                            </div>
+                                        
                                         </div>
                                     </div>
                                 </div>
@@ -231,8 +239,8 @@
                         <div class="single-box">
                             <ul class="items gap-3 d-flex flex-wrap align-items-center">
                                 <li><a href="about.html">About us</a></li>
-                                <li><a href="previous-results.html">Predicted Results</a></li>
-                                <li><a href="lottery-result.html">Lottery Results</a></li>
+                                <li><a href="terms&condition.html">Terms & Conditions</a></li>
+                                <li><a href="privacy&policy.html">Responsible Gaming</a></li>
                                 <li><a href="faq.html">Faqs</a></li>
                                 
                                 <li><a href="winning-stories.html">Winning Stories</a></li>
@@ -270,6 +278,7 @@
     <script src="assets/js/plugin/wow.min.js"></script>
     <script src="assets/js/plugin/plugin.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
